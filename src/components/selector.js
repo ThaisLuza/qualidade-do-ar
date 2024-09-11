@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 
-const CitySelector = () => {
+const CitySelector = ({setCity}) => {
   const [cities, setCities] = useState([]);
   const [selectedCity, setSelectedCity] = useState('');
 
@@ -25,6 +25,8 @@ const CitySelector = () => {
 
   const handleCityChange = (event) => {
     setSelectedCity(event.target.value);
+    setCity(event.target.value);
+    
   };
 
   return (
