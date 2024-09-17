@@ -1,0 +1,101 @@
+/* AirQualityApp.module.css */
+
+.appContainer {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ background-color: #f0f4f8; /* Cor de fundo leve */
+}
+
+.card {
+ background-color: #fff; /* Cor de fundo do card */
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ max-width: 400px;
+ width: 100%;
+ text-align: center;
+}
+
+.header {
+ margin-bottom: 20px;
+}
+
+.title {
+ font-size: 1.5rem;
+ margin: 0;
+ padding: 30px;
+}
+
+.refreshBtn {
+ background-color: #007bff; /* Cor do botão */
+ border: none;
+ color: white;
+ padding: 10px 20px;
+ margin: 0 10px; /* Espaçamento horizontal entre os botões */
+ font-size: 1rem;
+ border-radius: 4px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.refreshBtn:hover {
+ background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.location {
+ margin-bottom: 20px;
+ font-size: 1.2rem;
+}
+
+.airQualityCircle {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+.aqiValue {
+ font-size: 2rem;
+ font-weight: bold;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px; /* Espaçamento entre o parâmetro e o valor */
+}
+
+.parameter {
+ font-size: 1rem;
+ color: #555;
+}
+
+.value {
+ font-size: 2rem;
+ font-weight: bold;
+}
+
+.loader {
+ border: 4px solid rgba(0, 0, 0, 0.1);
+ border-top: 4px solid #007bff;
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ animation: spin 1s linear infinite;
+ margin-left: 10px;
+}
+
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+
+.status {
+ font-size: 1rem;
+ margin-bottom: 20px;
+}
+
+.footer {
+ font-size: 0.9rem;
+ color: #666;
+}
